@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-<html>
-<body>
+<!DOCTYPE html> 
+<html onclick="myFunction()"> 
+<body> 
 
-<h1>The audio autoplay attribute</h1>
-
-<p>Click on the play button to play a sound:</p>
-
-<audio controls autoplay>
-  <source src="Spirit%20of%20the%20Dead%20-%20Aakash%20Gandhi.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
+<audio>
+  <source src="Spirit%20of%20the%20Dead%20-%20Aakash%20Gandhi.mp3" type="audio/mp3">
+  Your browser does not support HTML5 video.
 </audio>
 
-</body>
+<script>
+function myFunction() {
+  document.querySelector("audio").play();
+  alert();
+}
+
+document.querySelector("html").click();  
+
+</script>
+
+</body> 
 </html>
